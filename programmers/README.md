@@ -1,6 +1,6 @@
 # level 0
 
-### parseInt() : #### 문자열을 정수형으로 파싱한다.
+### parseInt() : 문자열을 정수형으로 파싱한다.
 
 ```js
 // 몫 구하기
@@ -79,5 +79,81 @@ function solution(slice, n) {
 // 배열 뒤집기
 function solution(num_list) {
     return num_list.reverse();
+}
+```
+
+### forEach() : 주어진 함수를 뱉열 요소 각각에 대해 실행한다.
+
+```js
+// 배열 원소의 길이
+function solution(strlist) {
+    var answer = [];
+
+    strlist.forEach((item) => answer.push(item.length));
+
+    return answer;
+}
+```
+
+### map() : 배열 내의 모든 요소 각각에 대하여 주어진 함수를 호출한 결과를 모아 새로운 배열을 반환한다.
+
+```js
+// 배열 원소의 길이
+function solution(strlist) {
+    return strlist.map((item) => item.length);
+}
+
+// 배열 두 배 만들기
+function solution(numbers) {
+    return numbers.map((item) => item * 2);
+}
+```
+
+### split() : string 객체를 지정한 구분자를 이용하여 여러 개의 문자열로 나눈다.
+
+### join() : 배열의 모든 요소를 연결해 하나의 문자열로 만든다.
+
+### sort() : 배열의 요소를 적절한 위치에 정렬한 후 그 배열을 반환한다.
+
+```js
+// 최댓값 만들기(1)
+function solution(numbers) {
+    var answer = 0;
+
+    var newArr = numbers.sort((a, b) => b - a);
+    console.log(newArr);
+
+    return (answer = newArr[0] * newArr[1]);
+}
+```
+
+### includes() : 하나의 문자열이 다른 문자열에 포함되어 있는지를 판별하고, 결과를 true 또는 false로 반환한다.
+
+```js
+// 최댓값 만들기(1)
+function solution(numbers) {
+    var answer = 0;
+
+    var newArr = numbers.sort((a, b) => b - a);
+    console.log(newArr);
+
+    return (answer = newArr[0] * newArr[1]);
+}
+```
+
+### indexOf() : 호출한 String 객체에서 주어진 값과 일치하는 첫 번째 인덱스를 반환한다.
+
+```js
+// 문자열안에 문자열
+function solution(str1, str2) {
+    return str1.indexOf(str2) === -1 ? 2 : 1;
+}
+```
+
+### 문자열 뒤집기
+
+```js
+function solution(my_string) {
+    return my_string.split("").reverse().join("");
 }
 ```
