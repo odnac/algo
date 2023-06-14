@@ -1,6 +1,8 @@
-## level 0
+# level 0
 
-### parseInt() : 문자열을 정수형으로 파싱한다.
+### parseInt()
+
+문자열을 정수형으로 파싱한다.
 
 ```js
 // 몫 구하기
@@ -18,9 +20,9 @@ function solution(num1, num2) {
 function solution(numbers) {
     var answer = numbers.reduce((a, b) => a + b, 0);
     /* 0은 첫 번째 인수에 제공하는 값. 
-			 제공하지 않으면 배열의 첫 번째 요소를 사용함.
-			 따라서 빈 배열일 경우 0이 없으면 오류 뜸
-		*/
+		제공하지 않으면 배열의 첫 번째 요소를 사용함.
+		따라서 빈 배열일 경우 0이 없으면 오류 뜸
+	*/
 
     return answer;
 }
