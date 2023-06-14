@@ -138,14 +138,9 @@ function solution(numbers) {
 ### includes() : 하나의 문자열이 다른 문자열에 포함되어 있는지를 판별하고, 결과를 true 또는 false로 반환한다.
 
 ```js
-// 최댓값 만들기(1)
-function solution(numbers) {
-    var answer = 0;
-
-    var newArr = numbers.sort((a, b) => b - a);
-    console.log(newArr);
-
-    return (answer = newArr[0] * newArr[1]);
+// 문자열안에 문자열
+function solution(str1, str2) {
+    return str1.includes(str2) ? 1 : 2;
 }
 ```
 
@@ -157,6 +152,10 @@ function solution(str1, str2) {
     return str1.indexOf(str2) === -1 ? 2 : 1;
 }
 ```
+
+### find() : 주어진 판별 함수를 만족하는 첫 번째 요소의 값을 반환합니다.
+
+### findIndex() : 주어진 판별 함수를 만족하는 배열의 첫 번째 요소에 대한 인덱스를 반환합니다. 만족하는 요소가 없으면 -1을 반환합니다.
 
 ### 문자열 뒤집기
 
